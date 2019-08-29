@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <title>jQuery</title>
+</head>
+<body>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+   
+            $('.test > button').click(function(){
+        $('.test > p').css("background-color", "blue");
+
+        
+})
+
+$('.test1 > button').click(function(){
+        $('.test1 > p').hide();
+
+        
+})
+
+$('.test2 > button').click(function(){
+
+    $('.test2 > p').show("slow");
+        
+
+        
+})
+
+$('.test3 > button').click(function(){
+        $('.test3 > p').toggle();
+
+        
+})
+
+$('.test4 > button').click(function(){
+        $('.test4 > p').slideDown("slow");
+
+        
+})
+
+$('.test5 > button').click(function(){
+        $('.test5 > p').slideUp();
+
+        
+})
+
+$('.test6 > button').click(function(){
+        $('.test6 > p').slideToggle("slow");
+
+        
+})
+
+$('.test7 > button').click(function(){
+        $('.test7 > p').fadeIn('slow');
+
+        
+})
+
+
+$('.test8 > button').click(function(){
+        $('.test8 > p').fadeOut('slow');
+
+        
+})
+
+$('.test9 > button').click(function(){
+        $('.test9 > p').addClass('selected');
+
+        
+})
+
+$('.test10 > button').click(function(){
+        $('.test10 > p').before('<h1>Hello</h1>');
+
+        
+})
+
+$('.test11 > button').click(function(){
+        $('.test11 > p').after('<h1>Hello</h1>');
+
+        
+})
+$('.test12 > button').click(function(){
+        $('.test12 > p').append("''<strong>Hello</strong>'");
+
+        
+})
+$('.test13 > button').click(function(){
+        $('.test13 > p').html( "<span class='red'>Hello <b>Again</b></span>" );
+
+        
+})
+$('.test14 > button').click(function(){
+        $('.test14 > p').attr('this is a p');
+
+        
+})
+$('.test15 > button').click(function(){
+      var text =  $('.test15 > p').text();
+      $('input').val(text);
+
+        
+})
+$('.test16 > button').click(function(){
+        $('.test16 > p').text('made you click!!!!');
+
+        
+})
+$('.test10 > button').click(function(){
+        $('.test10 > p').before('<h1>Hello</h1>');
+
+        
+})
+    });
+    
+    
+    
+            </script>
+
+
+
+
+
+    <div class="container">
+       <div class="test master">
+           <h1>.click</h1>
+           <p>Click the button to add a .click event to this paragraph</p>
+           <button class="click">click</button>
+       </div>
+       <div class="test1 master">
+           <h1>.hide</h1>
+           <p>Click the button to add a .hide event to this paragraph</p>
+           <button>click</button>
+       </div>
+       <div class="test2 master">
+           <h1>.show</h1>
+           <p style="display: none">Click the button to add a .show event to this paragraph</p>
+           <button>click</button>
+       </div>
+       <div class="test3 master">
+           <h1>.toggle</h1>
+           <p>Click the button to add a .toggle event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test4 master">
+           <h1>.slideDown</h1>
+           <p>Click the button to add a .slideDown event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test5 master">
+           <h1>slideUp</h1>
+           <p>Click the button to add a .slideUp event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test6 master">
+           <h1>slideToggle</h1>
+           <p>Click the button to add a .slidToggle event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test7 master">
+           <h1>fadeIn</h1>
+           <p>Click the button to add a .fadeIn event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test8 master">
+           <h1>fadeOut</h1>
+           <p>Click the button to add a .fadeOut event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test9 master">
+           <h1>addClass</h1>
+           <p>Click the button to add a .addClass event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test10 master">
+           <h1>before</h1>
+           <p>Click the button to add a .before event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test11 master">
+           <h1>after</h1>
+           <p>Click the button to add a .after event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test12 master">
+           <h1>append</h1>
+           <p>Click the button to add a .append event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test13 master">
+           <h1>html</h1>
+           <p>Click the button to add a .html event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test14 master">
+           <h1>attr</h1>
+           <p>Click the button to add a .attr<em title="this is a p tag">hover here</em> event to this paragraph</p>
+           <button>.click</button>
+       </div>
+       <div class="test15 master">
+           <h1>val</h1>
+           <p>Click the button to add a .val event to this paragraph</p>
+           <input type="text" value="click the button">
+           <button>.click</button>
+       </div>
+       <div class="test16 master">
+           <h1>text</h1>
+           <p>Click the button to add a .val event to this paragraph</p>
+           <button>.click</button>
+       </div>
+      
+       
+
+
+    </div>
+   
+</body>
+</html>

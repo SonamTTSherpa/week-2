@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 970px;
+    height: 5000px;
+    background-color: blueviolet;
+}
+
+.master{
+    height: 5.8%;
+    background-color: yellow;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+.test4 p{
+    display: none;
+}
+
+
+.test7 p{
+    display: none;
+}
+
+.selected{
+    color: blue;
+}
